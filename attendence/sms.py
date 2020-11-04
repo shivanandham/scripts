@@ -1,12 +1,9 @@
 import requests 
 import json
-def send():
+def send(number, apikey):
+    print('Sending sms...')
     url = "https://www.fast2sms.com/dev/bulk"
     # f = open("data.txt",'r')
-    global number = '8610171639'
-    global apikey = 'taqIFWfpBGYrQxN81ie029wXP4uRKCsTVbUH6Ek3jlAgMDZO7nkl4a3KWVOXm5PyS0CYtHF7IzEhfobU'
-    
-
     my_data = {'sender_id': 'FSTSMS',
                'message': 'Looks like your attendance link is posted!!',
                'language': 'english',
@@ -18,8 +15,6 @@ def send():
 	'Content-Type': "application/x-www-form-urlencoded", 
 	'Cache-Control': "no-cache"}
 
-    requests.request("POST",url,data = my_data,headers = headers)
-    # returned_msg = json.loads(response.text)
-    # print(returned_msg['message'])
-
-# sms()
+    response = requests.request("POST",url,data = my_data,headers = headers)
+    returned_msg = json.loads(response.text)
+    print(returned_msg['message'])
