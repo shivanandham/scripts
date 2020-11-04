@@ -1,11 +1,13 @@
 f = open("data.txt", 'r')
-j = 0
-num = ''
-apikey = ''
-for i in f:
-    print(i)
-    # if j == 0:
-    #     number = i
-    # if j == 1:
-    #     apikey = i
-print(number, apikey)
+data = f.readlines()
+# for i in data:
+#     print(i, end='')
+print(data[0].rstrip(),end='')
+print(data[1].rstrip(),end='')
+# l = []
+# num = input()
+# l.append(num+'\n')
+# apikey = input()
+# l.append(apikey)
+# f = open('data.txt', 'w')
+# f.writelines(l)

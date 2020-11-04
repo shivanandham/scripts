@@ -3,8 +3,8 @@ import json
 def send():
     url = "https://www.fast2sms.com/dev/bulk"
     # f = open("data.txt",'r')
-    number = 'hello'
-    apikey = ''
+    global number = '8610171639'
+    global apikey = 'taqIFWfpBGYrQxN81ie029wXP4uRKCsTVbUH6Ek3jlAgMDZO7nkl4a3KWVOXm5PyS0CYtHF7IzEhfobU'
     
 
     my_data = {'sender_id': 'FSTSMS',
