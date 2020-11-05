@@ -1,11 +1,7 @@
 import pyautogui 
 import time 
 import sms
-#import keyboard 
-#import random
-#import win32api, win32con
 
-#, region=(150,175,350,600), grayscale=True, confidence=0.8
 
 def detect(num, api):
     i=0
@@ -50,7 +46,6 @@ def get_data():
     data = read_data.readlines()
     num = data[0].rstrip()
     api = data[1].rstrip()
-    print(api)
     return num, api
 def w_data():
     write_data = open('data.txt', 'w')

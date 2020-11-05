@@ -3,8 +3,7 @@ import json
 def send(number, apikey):
     print('Sending sms...')
     url = "https://www.fast2sms.com/dev/bulk"
-    # f = open("data.txt",'r')
-    my_data = {'sender_id': 'FSTSMS',
+    my_data = {'sender_id': 'AT-LINK',
                'message': 'Looks like your attendance link is posted!!',
                'language': 'english',
                'route': 'p',
