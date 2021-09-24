@@ -4,5 +4,5 @@ f = open("YourTextHere.txt", 'r')
 for i in f:
     if len(i)>3:
         pyautogui.typewrite(i)
-        time.sleep(0.3)
+        time.sleep(0.05)
 pyautogui.press("enter")
